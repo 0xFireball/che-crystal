@@ -11,6 +11,9 @@ MAINTAINER 0xfireball@outlook.com
 RUN sudo apt-get update
 RUN sudo apt-get install apt-transport-https
 
+# Install required tools for Crystal
+RUN sudo apt-get install clang binutils -y
+
 # Install Crystal
 RUN curl https://dist.crystal-lang.org/apt/setup.sh | sudo bash
 RUN sudo apt-get install crystal -y
