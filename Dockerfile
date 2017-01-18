@@ -7,6 +7,9 @@ FROM codenvy/ubuntu_jre
 
 MAINTAINER 0xfireball@outlook.com
 
+# APT setup
+RUN sudo apt-get install apt-transport-https
+
 # Install Crystal
 RUN curl https://dist.crystal-lang.org/apt/setup.sh | sudo bash
 RUN sudo apt-get install crystal -y
