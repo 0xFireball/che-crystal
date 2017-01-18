@@ -8,7 +8,7 @@ FROM codenvy/ubuntu_jre
 MAINTAINER 0xfireball@outlook.com
 
 # APT setup
-RUN sudo apt-get upgrade
+RUN sudo apt-get update
 RUN sudo apt-get install apt-transport-https
 
 # Install Crystal
