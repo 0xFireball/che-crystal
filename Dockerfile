@@ -16,6 +16,6 @@ RUN sudo apt-get install crystal -y
 
 ENV LANG C.UTF-8
 EXPOSE 5000
-LABEL che:server:5000:ref=dot.net.server che:server:5000:protocol=http
+LABEL che:server:5000:ref=crystal.server che:server:5000:protocol=http
 WORKDIR /projects
 CMD tail -f /dev/null
